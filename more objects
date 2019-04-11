@@ -1,0 +1,125 @@
+objects : 
+need [] notation to access obj.var 
+ex. 
+
+var kitty = 
+
+{
+    name:'lulu',
+    type:'cat',
+    age:8, 
+    wakeUp: function(time){
+        return(`wake up! it's ${time}`)
+    }
+}
+
+var title = type
+kitty[title] === kitty["type"] 
+u ca have "" in the obj key but it's uncommon 
+can't use dot notation on keys tarting with numbers
+
+method- a function that is a property inside of an objects
+    like wakeUp above. 
+    kitty.wakeUp(5)
+
+    dogSpace={}
+    dogSpace.speak= function(){
+        return "woof"
+    };
+
+    catSpace={}
+    catSpace.speak= function(){
+        return "meow"
+    };
+
+    dogSpace.speak => woof 
+    catSpace.speak => meow 
+//
+
+    var comments = {};
+    comments.data= ['"good job!", "yay", "lame..."];
+
+to print the comments u could define a function separately
+    this it not a method!      
+
+    function print(arr){
+        arr.forEach(function(el){
+            console.log(el)
+        })
+    }
+
+and pass the comments like this: 
+print(comments.data);
+
+OR u could : 
+
+comments.print = function (){
+        this.data.forEach(function(el){
+            console.log(el)
+        });
+    }
+and call it like this: 
+comments.print();
+
+** key word this is important and in a lot of interview questions **
+
+
+for in obj : 
+var string1 = "";
+var object1 = {a: 1, b: 2, c: 3};
+
+for (var property1 in object1) {
+  string1 += object1[property1];
+}
+
+console.log(string1);
+// expected output: "123"
+
+
+
+
+
+DOM - document obj model ie: the document is an object 
+there are 100 of properties and nested objects in the DOM
+
+js object that is models all of the html elements on the page 
+
+interface between js and html 
+
+select and manipulate elements
+
+selecting - query selector 
+
+document.getElementById 
+document.getElementClassName
+    returns a list of matches 
+document.getElementByTagName 
+    returns a list of matches
+
+it is returning an object rep of the element - cause the document is an obj and all the elements on it r too
+
+querySelector 
+document.querySelector("#highlight");
+    selects id highlight
+    use for tag name, css class name
+    !returns only the first match!
+
+document.querySelectorAll(".myClass");
+    returns all of them! 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

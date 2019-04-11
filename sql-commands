@@ -1,7 +1,0 @@
-psql 
-CREATE DATABASE final;
-\connect final;
-CREATE TABLE test (id SERIAL, text VARCHAR);
-INSERT INTO test (text) VALUES('database is connected');
-
-
