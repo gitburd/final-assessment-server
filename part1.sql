@@ -13,7 +13,7 @@ INSERT INTO cohorts (city, year) VALUES('San Francisco', 2019), ('London', 2009)
 INSERT INTO apprentices (cohort_id,first_name, last_name) VALUES(1,'Dena','Burd'),(1,'Daaimah','Tibrey'), (1,'Liliana','Velazquez');
 INSERT INTO apprentices (cohort_id, first_name, last_name) VALUES(2, 'Hermione', 'Granger'), (2, 'Ginny','Weasley'), (2, 'Nymphadora', 'Tonks');
 
-INSERT INTO cohorts (apprentice_id, city, year) VALUES('San Francisco', 2019), ('London', 2009);
+INSERT INTO cohorts (apprentice_id, city, year) VALUES('S.F.', 2019), ('London', 2009);
 
 
 
